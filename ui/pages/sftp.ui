@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>917</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form{
+	background-color: #A0B9D0;
+}
+
+QPushButton{
+	width:100px;
+	height:33px;
+	text-align: center;
+	padding: 3px;
+	font-weight:bold;
+	border-radius:10px;
+	color: #11253E;
+	border: 1px;
+}
+QPushButton:hover{
+	background-color:#6991B5;
+}
+QPushButton:pressed{
+	padding-left:5px;
+	background-color:#78A0BC;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>15</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>SFTP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTreeWidget" name="files">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTreeWidget {
+    spacing: 10px; /* Cách nhau 5px giữa các item trong 1 hàng */
+}
+
+#files{
+	background-color: #3E7CB1;
+	border:1px solid #DBE4EE;
+	border-radius: 25px solid #DBE4EE;
+	padding:25px;
+	color: #DBE4EE;
+}
+
+QHeaderView::section
+{	color: #DBE4EE;
+	background-color: #3E7CB1;
+	border:1px;
+}
+
+QTreeWidget::item{
+	padding-bottom:5px;		
+	spacing: 10px;
+}
+
+QTreeWidget::item::hover{
+	background-color: #81A4CD;
+	border:1px solid #81A4CD ;
+	border-radius: 5px
+}
+
+QTreeWidget::item::pressed{
+	font-weight: bold;
+	padding-left:5px;
+	background-color: #81A4CD;
+	border:1px solid #81A4CD ;
+	border-radius: 5px
+}
+
+QTreeWidget::item::selected{
+	font-weight: bold;
+	background-color: #81A4CD;
+	border:1px solid #81A4CD ;
+	border-radius: 5px
+}
+
+QTreeWidget::item::selected::active{
+	background-color: #054A91;
+	border:1px solid #81A4CD ;
+	border-radius: 5px;
+	font-weight:bold;
+}</string>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">File List</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Khởi tranh</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../static/res.qrc">
+        <normaloff>:/newPrefix/icons/icons/feather/folder.svg</normaloff>:/newPrefix/icons/icons/feather/folder.svg</iconset>
+      </property>
+      <item>
+       <property name="text">
+        <string>Breach</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sova</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Skye</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Controller</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../static/res.qrc">
+        <normaloff>:/newPrefix/icons/icons/feather/folder.svg</normaloff>:/newPrefix/icons/icons/feather/folder.svg</iconset>
+      </property>
+      <item>
+       <property name="text">
+        <string>Fade</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Reyna</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Smoke</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../static/res.qrc">
+        <normaloff>:/newPrefix/icons/icons/feather/folder.svg</normaloff>:/newPrefix/icons/icons/feather/folder.svg</iconset>
+      </property>
+      <item>
+       <property name="text">
+        <string>Omen</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Viper</string>
+        </property>
+       </item>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="1" alignment="Qt::AlignRight">
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="send_file_btn">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Send File</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/share.svg</normaloff>:/newPrefix/icons/icons/feather/share.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="delete_file_btn">
+        <property name="minimumSize">
+         <size>
+          <width>144</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Delete File</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/file-minus.svg</normaloff>:/newPrefix/icons/icons/feather/file-minus.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="new_file_btn">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>New File</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/file-plus.svg</normaloff>:/newPrefix/icons/icons/feather/file-plus.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="move_down_btn">
+        <property name="minimumSize">
+         <size>
+          <width>144</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Move Down</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/arrow-down-circle.svg</normaloff>:/newPrefix/icons/icons/feather/arrow-down-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="move_up_btn">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Move Up</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/arrow-up-circle.svg</normaloff>:/newPrefix/icons/icons/feather/arrow-up-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="receive_file_btn">
+        <property name="minimumSize">
+         <size>
+          <width>144</width>
+          <height>39</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Receive File</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../static/res.qrc">
+          <normaloff>:/newPrefix/icons/icons/feather/download.svg</normaloff>:/newPrefix/icons/icons/feather/download.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../static/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
